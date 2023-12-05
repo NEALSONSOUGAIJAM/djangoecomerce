@@ -22,7 +22,7 @@ def product(request):
 
 def cart(request):
     template = loader.get_template('pages/app/cart.html')
-    return HttpRessponse(template.render())
+    return HttpResponse(template.render())
 
 def productdet(request):
     template = loader.get_template('pages/app/product-detail.html')
